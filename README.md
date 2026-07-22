@@ -8,9 +8,9 @@ Executive Power BI dashboard built to analyze sales performance, customer review
 
 # Project Overview
 
-This project transforms multiple raw e-commerce datasets into a business intelligence dashboard for monitoring company performance. Using Microsoft Power BI, the dashboard provides an executive view of revenue trends, customer satisfaction, product category performance, and payment behavior.
+This project transforms multiple raw e-commerce datasets into an executive business intelligence dashboard for monitoring company performance. Using Microsoft Power BI, the dashboard provides a high-level view of revenue trends, customer satisfaction, product category performance, and payment behavior.
 
-The dashboard was built using Power Query for data transformation, a star schema data model for efficient relationships, DAX measures for business calculations, and interactive Power BI visualizations.
+The dashboard was built using Power Query for data transformation, a star schema data model for efficient relationships, DAX measures for business calculations, and business-focused Power BI visualizations.
 
 ---
 
@@ -49,9 +49,9 @@ The dashboard includes:
 - Monthly Revenue Trend
 - Top Product Categories by Revenue
 - Customer Review Score Distribution
-- Revenue by Payment Type
+- Revenue by Payment Method
 
-These visualizations provide a high-level overview of business performance while allowing users to quickly identify important trends.
+These visualizations provide a high-level overview of business performance while enabling users to quickly identify important trends.
 
 ![Dashboard Charts](images/dashboard-charts.png)
 
@@ -61,21 +61,21 @@ These visualizations provide a high-level overview of business performance while
 
 The raw datasets were cleaned and transformed using **Power Query**.
 
-Major preparation steps included:
+Key preparation steps included:
 
 - Imported multiple CSV datasets
-- Built relationships using a star schema
+- Configured appropriate data types for each table
 - Merged product category translations into the Products table
 - Replaced missing product categories with **"Unknown"**
-- Standardized category names
-- Created a Calendar table for time-based analysis
-- Configured appropriate data types for all tables
+- Standardized category names by replacing underscores with spaces
+- Converted category names to title case
+- Created a Calendar table to support time-based analysis
 
 ---
 
 # Data Model
 
-The dashboard follows a **star schema** centered around Orders and Order Items.
+The dashboard follows a **star schema** centered around the Orders and Order Items tables.
 
 Dimension tables include:
 
@@ -86,13 +86,13 @@ Dimension tables include:
 - Reviews
 - Calendar
 
-This modeling approach improves performance, simplifies calculations, and follows common business intelligence best practices.
+Relationships were configured to support efficient filtering and aggregation across the model, following common business intelligence best practices.
 
 ---
 
 # DAX Measures
 
-Custom DAX measures were created to calculate business metrics including:
+Custom DAX measures were created to calculate key business metrics, including:
 
 - Total Revenue
 - Total Orders
@@ -100,7 +100,7 @@ Custom DAX measures were created to calculate business metrics including:
 - Average Review Score
 - Average Delivery Days
 
-These measures power the dashboard KPIs and visualizations.
+These measures power the dashboard KPI cards and visualizations while dynamically responding to report context.
 
 ---
 
@@ -108,8 +108,8 @@ These measures power the dashboard KPIs and visualizations.
 
 Analysis of the dashboard revealed several business insights:
 
-- Revenue increased steadily throughout most of the available time period.
-- Health Beauty and Watches Gifts generated the highest revenue among product categories.
+- Revenue increased steadily throughout most of the available reporting period.
+- **Health & Beauty** and **Watches & Gifts** generated the highest revenue among product categories.
 - Most customer reviews received the maximum rating of **5**, indicating generally high customer satisfaction.
 - Credit cards accounted for approximately **78% of total payment value**.
 
@@ -183,7 +183,8 @@ olist-powerbi-sales-dashboard/
 
 Potential future enhancements include:
 
-- Interactive dashboard filtering
+- Interactive slicers
+- Drill-through report pages
 - Customer segmentation analysis
 - Geographic sales analysis
 - Profitability analysis
@@ -195,4 +196,4 @@ Potential future enhancements include:
 
 **Angelo Calingo**
 
-Recent Computer Science graduate with an interest in Business Intelligence, Data Analytics, and Real Estate Analytics.
+Recent Computer Science graduate interested in Business Intelligence, Data Analytics, and Real Estate Analytics.
