@@ -1,6 +1,6 @@
 # Olist E-Commerce Sales Dashboard
 
-Interactive Power BI dashboard built to analyze sales performance, customer reviews, product categories, and payment behavior using the Olist Brazilian E-Commerce dataset. This project demonstrates end-to-end business intelligence skills including data preparation, data modeling, DAX calculations, and dashboard design.
+Executive Power BI dashboard built to analyze sales performance, customer reviews, product categories, and payment trends using the Olist Brazilian E-Commerce dataset. This project demonstrates end-to-end business intelligence skills including data preparation, data modeling, DAX calculations, dashboard development, and business insight generation.
 
 ![Dashboard Overview](images/dashboard-overview.png)
 
@@ -8,9 +8,9 @@ Interactive Power BI dashboard built to analyze sales performance, customer revi
 
 # Project Overview
 
-This dashboard provides an executive overview of key e-commerce performance metrics using the Olist Brazilian E-Commerce dataset. It transforms multiple raw datasets into an interactive dashboard that enables users to monitor sales trends, evaluate customer satisfaction, identify top-performing product categories, and analyze payment method usage.
+This project transforms multiple raw e-commerce datasets into a business intelligence dashboard for monitoring company performance. Using Microsoft Power BI, the dashboard provides an executive view of revenue trends, customer satisfaction, product category performance, and payment behavior.
 
-The project was built entirely in **Microsoft Power BI** using Power Query, a star schema data model, DAX measures, and interactive visualizations.
+The dashboard was built using Power Query for data transformation, a star schema data model for efficient relationships, DAX measures for business calculations, and interactive Power BI visualizations.
 
 ---
 
@@ -21,14 +21,16 @@ The dashboard was designed to answer questions such as:
 - How has revenue changed over time?
 - Which product categories generate the most revenue?
 - How satisfied are customers based on review scores?
-- Which payment methods are used most frequently?
-- What are the key business performance indicators?
+- Which payment methods account for the largest share of revenue?
+- What are the company's key performance indicators?
 
 ---
 
 # Dashboard Features
 
 ## Executive KPI Cards
+
+The dashboard includes executive KPI cards displaying:
 
 - Total Revenue
 - Total Orders
@@ -40,7 +42,7 @@ The dashboard was designed to answer questions such as:
 
 ---
 
-## Interactive Visualizations
+## Business Visualizations
 
 The dashboard includes:
 
@@ -49,7 +51,7 @@ The dashboard includes:
 - Customer Review Score Distribution
 - Revenue by Payment Type
 
-These visualizations allow users to quickly identify business trends and performance metrics.
+These visualizations provide a high-level overview of business performance while allowing users to quickly identify important trends.
 
 ![Dashboard Charts](images/dashboard-charts.png)
 
@@ -57,24 +59,25 @@ These visualizations allow users to quickly identify business trends and perform
 
 # Data Preparation
 
-The data was cleaned and transformed using **Power Query** before building the dashboard.
+The raw datasets were cleaned and transformed using **Power Query**.
 
-Key preparation steps included:
+Major preparation steps included:
 
 - Imported multiple CSV datasets
-- Removed unnecessary columns
+- Built relationships using a star schema
+- Merged product category translations into the Products table
 - Replaced missing product categories with **"Unknown"**
-- Merged product category translations
 - Standardized category names
 - Created a Calendar table for time-based analysis
+- Configured appropriate data types for all tables
 
 ---
 
 # Data Model
 
-The dashboard uses a **star schema** centered around the Orders and Order Items tables.
+The dashboard follows a **star schema** centered around Orders and Order Items.
 
-Related dimension tables include:
+Dimension tables include:
 
 - Customers
 - Products
@@ -83,13 +86,13 @@ Related dimension tables include:
 - Reviews
 - Calendar
 
-This structure improves model performance and follows common business intelligence best practices.
+This modeling approach improves performance, simplifies calculations, and follows common business intelligence best practices.
 
 ---
 
 # DAX Measures
 
-Custom DAX measures were created to calculate key business metrics, including:
+Custom DAX measures were created to calculate business metrics including:
 
 - Total Revenue
 - Total Orders
@@ -97,27 +100,45 @@ Custom DAX measures were created to calculate key business metrics, including:
 - Average Review Score
 - Average Delivery Days
 
-These measures power the KPI cards and visualizations throughout the dashboard.
+These measures power the dashboard KPIs and visualizations.
 
 ---
 
 # Key Business Insights
 
-Some insights from the dashboard include:
+Analysis of the dashboard revealed several business insights:
 
-- Revenue steadily increased throughout most of the available time period.
-- Health Beauty and Watches Gifts were the highest revenue-generating product categories.
-- Most customer reviews received the maximum rating of **5**, indicating generally positive customer satisfaction.
-- Credit cards were by far the most frequently used payment method.
+- Revenue increased steadily throughout most of the available time period.
+- Health Beauty and Watches Gifts generated the highest revenue among product categories.
+- Most customer reviews received the maximum rating of **5**, indicating generally high customer satisfaction.
+- Credit cards accounted for approximately **78% of total payment value**.
 
 ---
 
-# Tools Used
+# Skills Demonstrated
+
+This project demonstrates experience with:
 
 - Microsoft Power BI
 - Power Query
 - DAX
 - Data Modeling
+- Star Schema Design
+- Data Cleaning
+- Data Transformation
+- Dashboard Development
+- Data Visualization
+- KPI Development
+- Business Intelligence
+- Git & GitHub
+
+---
+
+# Tools Used
+
+- Microsoft Power BI Desktop
+- Power Query
+- DAX
 - GitHub
 
 ---
@@ -128,7 +149,7 @@ This project uses the **Brazilian E-Commerce Public Dataset by Olist**, availabl
 
 **Dataset Source**
 
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 The dataset contains information about:
 
@@ -162,11 +183,11 @@ olist-powerbi-sales-dashboard/
 
 Potential future enhancements include:
 
-- Interactive slicers for filtering dashboard results
-- Additional customer segmentation analysis
+- Interactive dashboard filtering
+- Customer segmentation analysis
 - Geographic sales analysis
-- Profit and profitability metrics
-- Sales forecasting using time-series analysis
+- Profitability analysis
+- Sales forecasting
 
 ---
 
